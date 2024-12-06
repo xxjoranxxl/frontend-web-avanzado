@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: url('https://www.bancohipotecario.com.sv/wp-content/uploads/2023/12/mujer-joven-expresiva-posando-navidad-scaled.jpg') no-repeat center center;
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-attachment: fixed; /* Fijar la imagen al fondo */
+    background-blend-mode: overlay; /* Mezcla la imagen con un color semitransparente */
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo negro translúcido para suavizar la imagen */
+    margin: 0;
+    padding: 0;
+    color: white; /* Color de texto global */
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Altura completa */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    flex-direction: column; /* Organiza el contenido de arriba hacia abajo */
+    padding-left: 1rem; /* Añadir un margen pequeño en el lado izquierdo */
+    padding-right: 1rem; /* Añadir un margen pequeño en el lado derecho */
+  }
+  
+  /* Estilos para el header */
+  header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro pero semi-transparente */
+    color: white; /* Texto blanco */
+    padding: 40px 20px; /* Padding para darle altura al header */
+    text-align: center;
+    font-size: 32px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Fuente más destacada */
+    position: absolute; /* Colocamos el header sobre la imagen de fondo */
+    top: 20%; /* Para que no cubra toda la imagen */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Para asegurarnos de que esté encima de otros elementos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil para darle profundidad */
+    opacity: 0.8; /* Opacidad para que no opaque por completo la imagen */
+  }
+  
+  /* Estilo para los enlaces dentro del header */
+  header a {
+    color: white; /* Color blanco para los enlaces */
+    text-decoration: none; /* Eliminar subrayado */
+    margin: 0 15px; /* Espaciado entre los enlaces */
+    font-size: 1.2rem; /* Tamaño de fuente adecuado para los enlaces */
+  }
+  
+  header a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+  
+  /* Estilo para el contenido principal */
+  main {
+    width: 100%;
+    max-width: 1200px; /* Limitar el ancho para una mejor presentación en pantallas grandes */
+    padding: 120px 20px 20px; /* Espaciado para que no se pegue al header */
+    text-align: center;
+    color: white; /* Aseguramos que el texto en el main sea visible */
+  }
+  
+  h1, p {
+    margin-bottom: 20px; /* Espaciado entre los encabezados y párrafos */
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    line-height: 1.5; /* Espaciado entre las líneas para facilitar la lectura */
+  }
+  
+  /* Estilos adicionales de responsividad */
+  @media screen and (max-width: 768px) {
+    body {
+      padding-left: 2rem; /* En pantallas más pequeñas, un poco más de margen */
+      padding-right: 2rem; /* Aumentar el margen en pantallas pequeñas */
+    }
+  
+    header {
+      font-size: 20px; /* Reducir tamaño del texto en pantallas pequeñas */
+    }
+  
+    main {
+      padding: 80px 15px; /* Ajuste de espaciado en pantallas pequeñas */
+    }
+  }
+
+  body {
+    background: url('https://img.freepik.com/fotos-premium/arbol-navidad-digital-vibrante-que-brilla-fondo-placa-circuito-temporada-vacaciones_124717-13948.jpg?w=1380') no-repeat center center;
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    margin: 0;
+    padding: 0;
+  }

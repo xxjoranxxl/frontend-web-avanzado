@@ -1,0 +1,78 @@
+<div class="edit-modal">
+    <h2>Editar Presupuesto</h2>
+    <form (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <input type="text" id="description" [(ngModel)]="editData.description" name="description" required />
+      </div>
+      <div class="form-group">
+        <label for="amount">Monto</label>
+        <input type="number" id="amount" [(ngModel)]="editData.amount" name="amount" required />
+      </div>
+      <div class="form-group">
+        <label for="date">Fecha</label>
+        <input type="date" id="date" [(ngModel)]="editData.date" name="date" required />
+      </div>
+      <button type="submit" class="btnSubmit">Guardar cambios</button>
+      <button type="button" class="btnClose" (click)="closeModal()">Cerrar</button>
+    </form>
+  </div>
+
+
+
+
+<style>
+    .edit-modal {
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btnSubmit {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnSubmit:hover {
+  background-color: #218838;
+}
+
+.btnClose {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnClose:hover {
+  background-color: #c82333;
+}
+
+</style>
+  
